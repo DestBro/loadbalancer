@@ -1,0 +1,152 @@
+{
+  "info": {
+    "_postman_id": "422f785b-d981-47be-b7fc-e65bf55f5bbf",
+    "name": "iptiq-loadbalancer",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Load balancer test",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "// console.log(\"Start loadbalancer calls\");",
+              "",
+              "// pm.sendRequest('http://localhost:8080/id', function (err, res) {",
+              "//     if (err) {",
+              "//         console.log(err);",
+              "//     } else {",
+              "//         console.log(res);",
+              "//     }",
+              "// });",
+              "",
+              "// pm.sendRequest('http://localhost:8080/id', function (err, res) {",
+              "//     if (err) {",
+              "//         console.log(err);",
+              "//     } else {",
+              "//         console.log(res);",
+              "//     }",
+              "// });",
+              "",
+              "// pm.sendRequest('http://localhost:8080/id', function (err, res) {",
+              "//     if (err) {",
+              "//         console.log(err);",
+              "//     } else {",
+              "//         console.log(res);",
+              "//     }",
+              "// });",
+              "",
+              "// pm.sendRequest('http://localhost:8080/id', function (err, res) {",
+              "//     if (err) {",
+              "//         console.log(err);",
+              "//     } else {",
+              "//         console.log(res);",
+              "//     }",
+              "// });",
+              "",
+              "// pm.sendRequest('http://localhost:8080/id', function (err, res) {",
+              "//     if (err) {",
+              "//         console.log(err);",
+              "//     } else {",
+              "//         console.log(res);",
+              "//     }",
+              "// });",
+              "",
+              "// pm.sendRequest('http://localhost:8080/id', function (err, res) {",
+              "//     if (err) {",
+              "//         console.log(err);",
+              "//     } else {",
+              "//         console.log(res);",
+              "//     }",
+              "// });",
+              "",
+              "// pm.sendRequest('http://localhost:8080/id', function (err, res) {",
+              "//     if (err) {",
+              "//         console.log(err);",
+              "//     } else {",
+              "//         console.log(res);",
+              "//     }",
+              "// });",
+              "",
+              "// console.log(\"I hope there are some errors related to server timeout\");"
+            ]
+          }
+        }
+      ],
+      "id": "4ed9dcc4-93d7-4fd9-a762-5f592fe27ff3",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "localhost:8080/identifier"
+      },
+      "response": []
+    },
+    {
+      "name": "Load balancer health-check",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "f54139e2-f653-44f8-8788-23525f2e37a9",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "72186ea6-8878-4560-bee6-0435f761d9e5",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "id": "a5c52c0b-2fc7-4cb5-b256-2812e625c198",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "localhost:8080/health-check"
+      },
+      "response": []
+    },
+    {
+      "name": "Provider get",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "f54139e2-f653-44f8-8788-23525f2e37a9",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "72186ea6-8878-4560-bee6-0435f761d9e5",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "id": "6700d3df-2385-4fa0-b187-034fd9339604",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "localhost:9000/identifier"
+      },
+      "response": []
+    }
+  ]
+}

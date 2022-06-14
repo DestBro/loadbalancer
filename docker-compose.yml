@@ -1,0 +1,127 @@
+version: '3.8'
+services:
+  loadbalancer:
+    image: loadbalancer
+    build:
+      args:
+        - PORT=8080
+      context: .
+      dockerfile: loadbalancer/Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - provider-9000
+      - provider-9001
+      - provider-9002
+      - provider-9003
+      - provider-9004
+      - provider-9005
+      - provider-9006
+      - provider-9007
+      - provider-9008
+      - provider-9009
+
+  provider-9000:
+    image: provider-9000
+    build:
+      args:
+        - PORT=9000
+      context: .
+      dockerfile: provider/Dockerfile
+    ports:
+      - "9000:9000"
+
+  provider-9001:
+    image: provider-9001
+    build:
+      args:
+        - PORT=9001
+      context: .
+      dockerfile: provider/Dockerfile
+    ports:
+      - "9001:9001"
+
+  provider-9002:
+    image: provider-9002
+    build:
+      args:
+        - PORT=9002
+      context: .
+      dockerfile: provider/Dockerfile
+    ports:
+      - "9002:9002"
+
+  provider-9003:
+    image: provider-9003
+    build:
+      args:
+        - PORT=9003
+      context: .
+      dockerfile: provider/Dockerfile
+    ports:
+      - "9003:9003"
+
+  provider-9004:
+    image: provider-9004
+    build:
+      args:
+        - PORT=9004
+      context: .
+      dockerfile: provider/Dockerfile
+    ports:
+      - "9004:9004"
+
+
+  provider-9005:
+    image: provider-9005
+    build:
+      args:
+        - PORT=9005
+      context: .
+      dockerfile: provider/Dockerfile
+    ports:
+      - "9005:9005"
+
+
+  provider-9006:
+    image: provider-9006
+    build:
+      args:
+        - PORT=9006
+      context: .
+      dockerfile: provider/Dockerfile
+    ports:
+      - "9006:9006"
+
+
+  provider-9007:
+    image: provider-9007
+    build:
+      args:
+        - PORT=9007
+      context: .
+      dockerfile: provider/Dockerfile
+    ports:
+      - "9007:9007"
+
+
+  provider-9008:
+    image: provider-9008
+    build:
+      args:
+        - PORT=9008
+      context: .
+      dockerfile: provider/Dockerfile
+    ports:
+      - "9008:9008"
+
+
+  provider-9009:
+    image: provider-9009
+    build:
+      args:
+        - PORT=9009
+      context: .
+      dockerfile: provider/Dockerfile
+    ports:
+      - "9009:9009"
