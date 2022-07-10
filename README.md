@@ -1,4 +1,4 @@
-### Load Balancer iptiQ
+### Load Balancer
 
 Test app:
 ----------------------------
